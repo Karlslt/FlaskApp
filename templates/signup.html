@@ -57,6 +57,9 @@
 				<button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Sign up</button>
 			</form>
 			<div id="signUpMessage"> </div>
+			{% for message in get_flashed_messages() %}
+				<div class="flash">{{ message }}</div>
+			{% endfor %}
 		</div>
 		
 		<footer class="footer">
